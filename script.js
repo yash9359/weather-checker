@@ -14,7 +14,7 @@ const locationNotFound = document.querySelector(".location-not-found");
 async function checkWeather(city) {
   if (!city) return;
 
-  const apiKey = "16bd7282aeb236e4fed622652e943842"; 
+  const apiKey = "ENTER YOUR API KEY NOT MINE "; 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
   try {
@@ -79,3 +79,4 @@ inputBox.addEventListener("keypress", (e) => {
     checkWeather(inputBox.value.trim());
   }
 });
+
